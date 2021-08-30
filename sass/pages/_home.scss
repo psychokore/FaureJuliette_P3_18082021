@@ -1,0 +1,11 @@
+.localisation{
+    display: flex;
+    justify-content: center;
+    @include background; /*foncer le gris */
+}
+
+.fa-map-marker-alt{
+    padding-top: 15px;
+    margin-right: 15px;
+}
+

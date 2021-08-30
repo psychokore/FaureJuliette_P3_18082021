@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.header {
+  width: 50%;
+  display: block;
+  margin: 3vw auto 3vw auto;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  /*foncer le gris */
+}
+
+.fa-map-marker-alt {
+  padding-top: 15px;
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
