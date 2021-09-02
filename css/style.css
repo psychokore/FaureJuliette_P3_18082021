@@ -18,6 +18,19 @@ h4 {
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+
+.resto_prev__heading {
+  font-size: 1em;
+}
+
+.resto_prev__byline {
+  font-size: 0.9em;
+}
+
+.fa-heart {
+  font-size: 1.2em;
 }
 
 .header {
@@ -117,12 +130,31 @@ footer .fas {
   flex-direction: column;
   background-color: #fff;
   align-items: center;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
+  box-shadow: 2px 3px 5px #c3c3c3;
 }
 .resto_prev__image {
   width: 100%;
   height: 200px;
   border-radius: 15px 15px 0 0;
+}
+.resto_prev .description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.resto_prev .texte {
+  padding-left: 10px;
+}
+.resto_prev .fas {
+  align-self: center;
+  padding-right: 20px;
+}
+.resto_prev__heading {
+  margin-bottom: 5px;
+}
+.resto_prev__byline {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
