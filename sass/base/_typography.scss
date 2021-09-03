@@ -19,6 +19,10 @@ a{
     color: $colour-black;
 }
 
+span{
+    color: $colour-white;
+}
+
 .resto_prev__heading{
     font-size: 1em;
 }
@@ -29,4 +33,12 @@ a{
 
 .fa-heart{
     font-size: 1.2em;
+}
+
+.fa-hands-helping{
+    font-size: 0.7em;
+}
+
+.fa-utensils{
+    font-size: 0.8em;
 }
