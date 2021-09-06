@@ -1,0 +1,8 @@
+.button {
+    color: $colour-white;
+    background: linear-gradient(to top left, $colour-primary, $colour-secondary);
+    padding: 15px;
+    border-radius: 30px;
+    @include boxshadow;
+
+}

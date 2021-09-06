@@ -14,6 +14,8 @@ body {
 
 h4 {
   font-family: "Shrikhand";
+  font-size: 1.2em;
+  font-weight: 200;
 }
 
 a {
@@ -43,6 +45,31 @@ span {
 
 .fa-utensils {
   font-size: 0.8em;
+}
+
+input {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.fonctionnement p {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.button {
+  color: #fff;
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 2px 3px 5px #c3c3c3;
+}
+
+.fa-heart:hover {
+  color: linear-gradient(to top left, #9356dc, #ff79da);
 }
 
 .header {
@@ -88,11 +115,18 @@ footer a {
   display: flex;
   justify-content: center;
   background-color: #dddddd;
+  height: 50px;
+  box-shadow: 0px 6px 8px #aaaaaa inset;
 }
-
-.fa-map-marker-alt {
+.localisation input {
+  background-color: #dddddd;
+  border: none;
+  width: 40%;
+  margin-left: 15px;
+  background: none;
+}
+.localisation .fa-map-marker-alt {
   padding-top: 15px;
-  margin-right: 15px;
 }
 
 .column {
@@ -104,22 +138,15 @@ footer a {
   padding-right: 5vw;
   background-color: #f6f6f6;
 }
-.column__heading {
-  font-weight: bold;
-}
 
 .reserver {
   text-align: center;
   align-items: center;
 }
-.reserver .button {
-  color: #fff;
-  background-color: #9356dc;
-  padding: 15px;
-  border-radius: 30px;
-  box-shadow: 2px 3px 5px #c3c3c3;
+.reserver h2 {
+  width: 70%;
 }
-.reserver p {
+.reserver .decouvrir {
   color: #595959;
   margin-left: 4vw;
   margin-right: 4vw;
@@ -160,6 +187,12 @@ footer a {
   position: absolute;
   left: 15px;
 }
+.fonctionnement .degustez:hover {
+  background-color: #e4d5f6;
+}
+.fonctionnement .degustez:hover .fa-store {
+  color: #782cd3;
+}
 
 .resto_prev {
   width: auto;
@@ -176,6 +209,8 @@ footer a {
   width: 100%;
   height: 180px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  object-position: 60% 60%;
 }
 .resto_prev .description {
   display: flex;
@@ -185,7 +220,7 @@ footer a {
 .resto_prev .texte {
   padding-left: 10px;
 }
-.resto_prev .fas {
+.resto_prev .far {
   align-self: center;
   padding-right: 20px;
 }
