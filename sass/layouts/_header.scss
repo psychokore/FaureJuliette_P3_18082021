@@ -1,7 +1,15 @@
 .header {
   width: 50%;
   display: block;
-  margin: 3vw auto 3vw auto;
+  margin: 5vw auto 2vw auto;
 }
 
+header{
+    height: 45px;
+}
 
+.fa-arrow-left{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}

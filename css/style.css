@@ -60,6 +60,28 @@ h2 {
   font-weight: bold;
 }
 
+.fa-arrow-left {
+  font-size: 1.2em;
+}
+
+.entete__heading {
+  font-family: "Shrikhand";
+  font-weight: 200;
+  font-size: 1.8em;
+}
+.entete .fa-heart {
+  font-size: 1.5em;
+}
+
+.menu__titre {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+button {
+  font-size: 1em;
+}
+
 .button {
   color: #fff;
   background: linear-gradient(to top left, #9356dc, #ff79da);
@@ -75,7 +97,17 @@ h2 {
 .header {
   width: 50%;
   display: block;
-  margin: 3vw auto 3vw auto;
+  margin: 5vw auto 2vw auto;
+}
+
+header {
+  height: 45px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 25px;
 }
 
 footer {
@@ -229,6 +261,37 @@ footer a {
 }
 .resto_prev__byline {
   margin-top: 5px;
+}
+
+.carte {
+  background-color: #f6f6f6;
+  padding-top: 3vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3vw;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+}
+.entete .fa-heart {
+  padding-top: 28px;
+  padding-right: 20px;
+}
+
+.menu__titre {
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+}
+
+button {
+  border-style: none;
+  align-self: center;
+  width: 55%;
 }
 
 /*# sourceMappingURL=style.css.map */

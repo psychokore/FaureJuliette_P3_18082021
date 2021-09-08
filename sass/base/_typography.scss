@@ -64,3 +64,28 @@ h2{
     font-weight: bold;
 }
 
+.fa-arrow-left{
+    font-size: 1.2em;
+}
+
+.entete{
+    &__heading{
+        font-family: "Shrikhand";
+        font-weight: 200;
+        font-size: 1.8em;
+    }
+    .fa-heart{
+        font-size: 1.5em;
+    }
+}
+
+.menu{
+    &__titre{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+
+button{
+    font-size: 1em;
+}

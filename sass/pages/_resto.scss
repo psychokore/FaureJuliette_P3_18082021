@@ -1,0 +1,32 @@
+.carte{
+    @include background;
+    padding-top: 3vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3vw;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+}    
+
+.entete{
+    display: flex;
+    justify-content: space-between;
+    .fa-heart{
+        padding-top: 28px;
+        padding-right: 20px;
+    }
+}
+
+.menu{
+    &__titre{
+        border-bottom: 3px solid $colour-tertiary;
+        width: 40px;
+    }
+}
+
+button{
+    border-style: none;
+    align-self: center;
+    width: 55%;
+}
