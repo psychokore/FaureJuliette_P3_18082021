@@ -294,4 +294,26 @@ button {
   width: 55%;
 }
 
+.plats {
+  background-color: #fff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.plats h4 {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+.plats .complement {
+  grid-row: 2;
+  grid-column: 1/span 2;
+  width: 85%;
+}
+.plats .prix {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: right;
+}
+
 /*# sourceMappingURL=style.css.map */
