@@ -4,9 +4,9 @@ body {
 
 @font-face {
   font-family: "Roboto";
-  src: url(/Polices/roboto/Roboto-Regular.ttf);
+  src: url(../Polices/roboto/Roboto-Regular.ttf);
   font-family: "Shrikhand";
-  src: url(/Polices/shrikhand/Shrikhand-Regular.ttf);
+  src: url(../Polices/shrikhand/Shrikhand-Regular.ttf);
 }
 body {
   font-family: "Roboto";
