@@ -75,9 +75,9 @@
       position: absolute;
       left: 15px;
   }
-  .degustez:hover{
+  li>div:hover{
       background-color: lighten($colour-primary, 30%);
-      .fa-store{
+      .fas{
           color: darken($colour-primary, 10%);
       }
   }
@@ -117,5 +117,13 @@
   }
   &__byline{
       margin-top: 5px;
+  }
+  .new{
+    background-color: $colour-tertiary;
+    color: darken($colour-tertiary, 40);
+    position:absolute;
+    right: 30px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
   }
 }

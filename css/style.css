@@ -95,6 +95,10 @@ button {
   font-size: 1em;
 }
 
+.new {
+  font-size: 0.8em;
+}
+
 .button {
   color: #fff;
   background: linear-gradient(to top left, #9356dc, #ff79da);
@@ -249,10 +253,10 @@ footer a {
   position: absolute;
   left: 15px;
 }
-.fonctionnement .degustez:hover {
+.fonctionnement li > div:hover {
   background-color: #e4d5f6;
 }
-.fonctionnement .degustez:hover .fa-store {
+.fonctionnement li > div:hover .fas {
   color: #782cd3;
 }
 
@@ -291,6 +295,14 @@ footer a {
 }
 .resto_prev__byline {
   margin-top: 5px;
+}
+.resto_prev .new {
+  background-color: #99e2d0;
+  color: #278870;
+  position: absolute;
+  right: 30px;
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
 }
 
 .preview {
