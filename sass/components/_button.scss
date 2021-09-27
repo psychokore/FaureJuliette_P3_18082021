@@ -1,8 +1,26 @@
 .button {
     color: $colour-white;
-    background: linear-gradient(to top left, $colour-primary, $colour-secondary);
+    background: $gradient;
     padding: 15px;
     border-radius: 30px;
     @include boxshadow;
-
+    z-index: 1;
+    position: relative;
+    &::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: all 250ms;
+        box-shadow: 5px 8px 3px darken($colour-grey, 20%);
+        background-color: linear-gradient(to top left, lighten($colour-primary,10), lighten($colour-secondary,10));
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
 }
