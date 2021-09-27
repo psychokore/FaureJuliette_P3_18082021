@@ -1,0 +1,14 @@
+.plats {
+    animation: apparitionplats 1000ms;
+}
+
+@keyframes apparitionplats {
+    0%{
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
