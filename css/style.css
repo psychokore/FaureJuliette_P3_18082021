@@ -105,20 +105,22 @@ button {
   padding: 15px;
   border-radius: 30px;
   box-shadow: 2px 3px 5px #c3c3c3;
-  z-index: 1;
   position: relative;
+  z-index: 1;
 }
 .button::after {
+  content: "";
+  z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   opacity: 0;
-  z-index: -1;
-  transition: all 250ms;
-  box-shadow: 5px 8px 3px #c3c3c3;
-  background-color: linear-gradient(to top left, #ae80e5, #fface8);
+  transition: opacity 250ms;
+  border-radius: 30px;
+  box-shadow: 3px 5px 8px #aaaaaa;
+  background-color: linear-gradient(to top left, white, white);
 }
 .button:hover::after {
   opacity: 1;
