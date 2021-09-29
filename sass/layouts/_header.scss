@@ -1,15 +1,33 @@
 .header {
   width: 50%;
   display: block;
-  margin: 5vw auto 2vw auto;
+  margin: 5vw auto 5vw auto;
 }
 
 header{
-    height: 45px;
+    height: 11vw;
 }
 
 .fa-arrow-left{
     position: absolute;
-    left: 20px;
-    top: 25px;
+    left: 3vw;
+    top: 6vw;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+  .header{
+    width: 40%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  header{
+    height: 70px;
+  }
+  .fa-arrow-left{
+    top: 5vw;
+  }
+  
 }

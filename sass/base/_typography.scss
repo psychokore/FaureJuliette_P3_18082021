@@ -108,3 +108,17 @@ button{
 .new{
     font-size: 0.8em;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+    .fa-arrow-left{
+        font-size: 1.5em;
+    }
+    .fa-map-marker-alt{
+        font-size: 1.3em;
+    }
+    input{
+        font-size: 1.3em;
+    }
+}

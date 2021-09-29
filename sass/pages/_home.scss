@@ -131,3 +131,51 @@
     padding: 5px 10px 5px 10px;
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+  .localisation{
+    height: 60px;
+    input{
+      width: 20%;
+    }
+    .fa-map-marker-alt{
+      padding-top: 18px;
+    }
+  }
+
+  .reserver{
+    padding-bottom: 3vw;
+    h2{
+      margin-bottom: 1vw;
+    }
+    .decouvrir{
+      margin-bottom: 3vw;
+      margin-top: 1vw;
+    }
+  }
+  
+  .fonctionnement{
+    padding-bottom: 0;
+    h2{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    li{
+      justify-content: center;
+      width: 50%;
+      margin-left: 23vw;
+      margin-bottom: 3vw;
+    }
+    span{
+      left: 30vw;
+    }
+    div{
+      padding: 5px;
+      width: 80%;
+    }
+
+  }
+}
