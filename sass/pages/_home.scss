@@ -7,7 +7,7 @@
   input{
       background-color: darken($colour-grey, 10%);
       border: none;
-      width: 40%;
+      width: 30%;
       margin-left: 15px;
       background: none;
       &:focus{
@@ -76,7 +76,7 @@
       align-self: center;
       padding: 5px 10px 5px 10px;
       position: absolute;
-      left: 15px;
+      left: 4vw;
   }
   li>div:hover{
       background-color: lighten($colour-primary, 30%);
@@ -122,15 +122,16 @@
   &__byline{
       margin-top: 5px;
   }
-  .new{
+}  
+.new{
     background-color: $colour-tertiary;
     color: darken($colour-tertiary, 40);
-    position:absolute;
-    right: 30px;
-    margin-top: 10px;
+    position:relative;
+    width: 50px;
+    top: 40px;
+    left: 250px;
     padding: 5px 10px 5px 10px;
   }
-}
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
@@ -165,17 +166,38 @@
     }
     li{
       justify-content: center;
-      width: 50%;
-      margin-left: 23vw;
+      width: 70%;
+      margin-left: 15vw;
       margin-bottom: 3vw;
     }
     span{
-      left: 30vw;
+      left: 24vw;
     }
     div{
       padding: 5px;
       width: 80%;
     }
+    p{
+      margin-left: 40px;
+    }
+  }
 
+  #restaurants{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    h2{
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    a{
+      width: 45%;
+    }
+    .new{
+    left: 230px;
+    top: 35px;
+    }
   }
 }
