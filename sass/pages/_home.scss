@@ -10,6 +10,9 @@
       width: 40%;
       margin-left: 15px;
       background: none;
+      &:focus{
+        outline: none;
+      }
   }
   .fa-map-marker-alt{
       padding-top: 15px;
@@ -108,9 +111,10 @@
   .texte{
       padding-left: 10px;
   }
-  .far .fas{
+  .far{
       align-self: center;
       padding-right: 20px;
+      
   }
   &__heading{
       margin-bottom: 5px;

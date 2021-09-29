@@ -27,19 +27,3 @@
     }
 }
 
-.resto_prev{
-    .fas{
-        opacity: 0;
-        position: absolute;
-        background-color: $gradient;
-        transition: opacity 250ms;
-    }
-    .far{
-        position: relative;
-        &:hover{
-            .fas{
-                opacity: 1;
-            }
-        }
-    }
-}
