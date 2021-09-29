@@ -126,8 +126,21 @@ button {
   opacity: 1;
 }
 
+.resto_prev .fas {
+  opacity: 0;
+  position: absolute;
+  background-color: linear-gradient(to top left, #9356dc, #ff79da);
+  transition: opacity 250ms;
+}
+.resto_prev .far {
+  position: relative;
+}
+.resto_prev .far:hover .fas {
+  opacity: 1;
+}
+
 .plats {
-  animation: apparitionplats 1000ms;
+  animation: apparitionplats 1000ms 200ms;
 }
 
 @keyframes apparitionplats {
@@ -298,7 +311,7 @@ footer a {
 .resto_prev .texte {
   padding-left: 10px;
 }
-.resto_prev .far {
+.resto_prev .far .fas {
   align-self: center;
   padding-right: 20px;
 }
