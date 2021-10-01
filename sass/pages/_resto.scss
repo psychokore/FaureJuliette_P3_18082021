@@ -42,7 +42,7 @@
     background-color: $colour-white;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns: 70% 25%;
     grid-template-rows: repeat(2, 25px);
     align-items: center;
     padding: 10px 20px 10px 10px;
@@ -75,4 +75,12 @@ button{
     width: 55%;
     margin-top: 8vw;
     margin-bottom: 10vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+    button{
+        width: 30%;
+    }
 }

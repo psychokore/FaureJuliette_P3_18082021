@@ -201,3 +201,78 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px)
+/*desktop*/
+{
+  .localisation{
+    height: 60px;
+    input{
+      width: 15%;
+    }
+    .fa-map-marker-alt{
+      padding-top: 18px;
+    }
+  }
+  .reserver{
+    height: 160px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    .decouvrir{
+      margin-top: 0;
+      }
+    h2{
+      margin-bottom: 10px;
+      }
+    }
+  .fonctionnement{
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    h2{
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 5vw;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    li{
+      justify-content: center;
+      width: 60%;
+      margin-bottom: 2vw;
+    }
+    span{
+      left: 26vw;
+    }
+    div{
+      padding: 5px;
+      width: 80%;
+    }
+    p{
+      margin-left: 40px;
+    }
+  }
+  #restaurants{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    h2{
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    a{
+      width: 45%;
+    }
+    .new{
+    left: 30vw;
+    top: 4.3vw;
+    width: 65px;
+    }
+  }
+}

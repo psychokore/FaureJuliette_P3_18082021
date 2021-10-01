@@ -126,3 +126,13 @@ button{
         font-size: 1.4em;
     }
 }
+
+@media screen and (min-width: 1024px)
+{
+    .new{
+        font-size: 1em;
+    }
+    .fa-arrow-left{
+        font-size: 1.8em;
+    }
+}

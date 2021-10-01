@@ -31,3 +31,18 @@ header{
   }
   
 }
+
+@media screen and (min-width: 1024px)
+{
+  .header{
+    width: 300px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  header{
+    height: 70px;
+  }
+  .fa-arrow-left{
+    top: 3vw;
+  }
+}
