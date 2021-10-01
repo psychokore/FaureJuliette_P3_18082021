@@ -174,18 +174,7 @@ button{
     .decouvrir{
         font-size: 1.2em;
     }
-
-    .resto-prev{
-    .fa-heart{
-        font-size: 1.5em;
-      }
-    &__byline{
-        font-size: 1em;
-    }
-    &__heading{
-    font-size: 1.2em;
-    }
-    }
+    
     li{
         font-size: 1.1em;
     }
@@ -218,5 +207,15 @@ button{
             font-weight: 600;
         }
     }
+    .resto_prev{
+        .fa-heart{
+            font-size: 1.5em;
+        }
+        &__heading{
+            font-size: 1.2em;
+        }
+        &__byline{
+            font-size: 1em;
+        }
+    }
 }
-

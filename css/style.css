@@ -166,16 +166,6 @@ button {
     font-size: 1.2em;
   }
 
-  .resto-prev .fa-heart {
-    font-size: 1.5em;
-  }
-  .resto-prev__byline {
-    font-size: 1em;
-  }
-  .resto-prev__heading {
-    font-size: 1.2em;
-  }
-
   li {
     font-size: 1.1em;
   }
@@ -203,6 +193,16 @@ button {
   .plats .prix {
     font-size: 1.2em;
     font-weight: 600;
+  }
+
+  .resto_prev .fa-heart {
+    font-size: 1.5em;
+  }
+  .resto_prev__heading {
+    font-size: 1.2em;
+  }
+  .resto_prev__byline {
+    font-size: 1em;
   }
 }
 .button {
