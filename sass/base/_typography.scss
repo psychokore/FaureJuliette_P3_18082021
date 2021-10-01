@@ -172,5 +172,31 @@ button{
     li{
         font-size: 1.1em;
     }
+    .entete{
+        .fa-heart{
+            font-size: 1.8em;
+        }
+    }
+    .menu{
+        &__titre{
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    }
+    
+    .plats{
+        h4{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .complement{
+            font-size: 1em;
+            font-weight: 300;
+        }
+        .prix{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    }
 }
 
