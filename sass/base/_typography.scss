@@ -135,6 +135,23 @@ button{
     .fa-arrow-left{
         font-size: 1.8em;
     }
+    .carte{
+        h1{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1.2em;
+        }
+        h4{
+            font-size: 1.1em;
+        }
+        .complement{
+            font-size: 1em;
+        }
+        .fa-heart{
+            font-size: 1.8em;
+        }
+    }
 }
 
 @media screen and (min-width: 1301px)
@@ -175,6 +192,9 @@ button{
     .entete{
         .fa-heart{
             font-size: 1.8em;
+        }
+        h1{
+            font-size: 2em;
         }
     }
     .menu{

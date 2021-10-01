@@ -124,6 +124,22 @@ button {
   .fa-arrow-left {
     font-size: 1.8em;
   }
+
+  .carte h1 {
+    font-size: 2em;
+  }
+  .carte h3 {
+    font-size: 1.2em;
+  }
+  .carte h4 {
+    font-size: 1.1em;
+  }
+  .carte .complement {
+    font-size: 1em;
+  }
+  .carte .fa-heart {
+    font-size: 1.8em;
+  }
 }
 @media screen and (min-width: 1301px) {
   .new {
@@ -166,6 +182,9 @@ button {
 
   .entete .fa-heart {
     font-size: 1.8em;
+  }
+  .entete h1 {
+    font-size: 2em;
   }
 
   .menu__titre {
@@ -768,6 +787,15 @@ button {
     width: 20%;
     margin-bottom: 6vw;
     margin-top: 5vw;
+  }
+
+  .plats {
+    width: 80%;
+    margin-left: 8vw;
+  }
+
+  .carte {
+    padding-left: 3vw;
   }
 }
 @media screen and (min-width: 1301px) {
