@@ -84,3 +84,12 @@ button{
         width: 30%;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width:1300px)
+{
+    button{
+        width: 20%;
+        margin-bottom: 6vw;
+        margin-top: 5vw;
+    }
+}

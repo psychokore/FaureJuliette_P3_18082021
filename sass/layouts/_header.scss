@@ -32,7 +32,7 @@ header{
   
 }
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1024px) and (max-width:1300px)
 {
   .header{
     width: 300px;
@@ -44,5 +44,20 @@ header{
   }
   .fa-arrow-left{
     top: 3vw;
+  }
+}
+
+@media screen and (min-width: 1301px)
+{
+  .header{
+    width: 300px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  header{
+    height: 80px;
+  }
+  .fa-arrow-left{
+    top: 3.7vw;
   }
 }

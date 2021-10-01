@@ -3,23 +3,21 @@
   justify-content: center;
   background-color: darken($colour-grey, 10%);
   height: 50px;
-  box-shadow: 0px 6px 8px darken($colour-grey,30%) inset;
-  input{
-      background-color: darken($colour-grey, 10%);
-      border: none;
-      width: 30%;
-      margin-left: 15px;
-      background: none;
-      &:focus{
-        outline: none;
-      }
+  box-shadow: 0px 6px 8px darken($colour-grey, 30%) inset;
+  input {
+    background-color: darken($colour-grey, 10%);
+    border: none;
+    width: 30%;
+    margin-left: 15px;
+    background: none;
+    &:focus {
+      outline: none;
+    }
   }
-  .fa-map-marker-alt{
-      padding-top: 15px;
+  .fa-map-marker-alt {
+    padding-top: 15px;
   }
 }
-
-
 
 .column {
   display: flex;
@@ -34,8 +32,8 @@
 .reserver {
   text-align: center;
   align-items: center;
-  h2{
-      width: 70%;
+  h2 {
+    width: 70%;
   }
   .decouvrir {
     color: lighten($colour-black, 35%);
@@ -55,7 +53,7 @@
     margin-bottom: 5vw;
     margin-left: 3vw;
   }
-  div{
+  div {
     display: flex;
     justify-content: flex-start;
     @include background;
@@ -70,19 +68,19 @@
     margin-left: 30px;
     margin-right: 20px;
   }
-  span{
-      background-color: $colour-primary;
-      border-radius: 100%;
-      align-self: center;
-      padding: 5px 10px 5px 10px;
-      position: absolute;
-      left: 4vw;
+  span {
+    background-color: $colour-primary;
+    border-radius: 100%;
+    align-self: center;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    left: 4vw;
   }
-  li>div:hover{
-      background-color: lighten($colour-primary, 30%);
-      .fas{
-          color: darken($colour-primary, 10%);
-      }
+  li > div:hover {
+    background-color: lighten($colour-primary, 30%);
+    .fas {
+      color: darken($colour-primary, 10%);
+    }
   }
 }
 
@@ -103,176 +101,258 @@
     object-fit: cover;
     object-position: 60% 60%;
   }
-  .description{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+  .description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
-  .texte{
-      padding-left: 10px;
+  .texte {
+    padding-left: 10px;
   }
-  .far{
-      align-self: center;
-      padding-right: 20px;
-      
+  .far {
+    align-self: center;
+    padding-right: 20px;
   }
-  &__heading{
-      margin-bottom: 5px;
+  &__heading {
+    margin-bottom: 5px;
   }
-  &__byline{
-      margin-top: 5px;
+  &__byline {
+    margin-top: 5px;
   }
-}  
-.new{
-    background-color: $colour-tertiary;
-    color: darken($colour-tertiary, 40);
-    position:relative;
-    width: 50px;
-    top: 40px;
-    right: -65vw;
-    padding: 5px 10px 5px 10px;
-  }
+}
+.new {
+  background-color: $colour-tertiary;
+  color: darken($colour-tertiary, 40);
+  position: relative;
+  width: 50px;
+  top: 40px;
+  right: -65vw;
+  padding: 5px 10px 5px 10px;
+}
 
-
-@media screen and (min-width: 768px) and (max-width: 1023px)
-/*tablettes*/
-{
-  .localisation{
+@media screen and (min-width: 768px) and (max-width: 1023px) /*tablettes*/ {
+  .localisation {
     height: 60px;
-    input{
+    input {
       width: 20%;
     }
-    .fa-map-marker-alt{
+    .fa-map-marker-alt {
       padding-top: 18px;
     }
   }
 
-  .reserver{
+  .reserver {
     padding-bottom: 3vw;
-    h2{
+    h2 {
       margin-bottom: 1vw;
     }
-    .decouvrir{
+    .decouvrir {
       margin-bottom: 3vw;
       margin-top: 1vw;
     }
   }
-  
-  .fonctionnement{
+
+  .fonctionnement {
     padding-bottom: 0;
-    h2{
+    h2 {
       margin-bottom: 0;
       margin-top: 0;
     }
-    li{
+    li {
       justify-content: center;
       width: 70%;
       margin-left: 15vw;
       margin-bottom: 3vw;
     }
-    span{
+    span {
       left: 24vw;
     }
-    div{
+    div {
       padding: 5px;
       width: 80%;
     }
-    p{
+    p {
       margin-left: 40px;
     }
   }
 
-  #restaurants{
+  #restaurants {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 0;
-    h2{
+    h2 {
       width: 100%;
       margin-bottom: 0;
       margin-top: 0;
     }
-    a{
+    a {
       width: 45%;
     }
-    .new{
-    left: 30vw;
-    top: 4.3vw;
+    .new {
+      left: 30vw;
+      top: 4.3vw;
     }
   }
 }
 
-@media screen and (min-width: 1024px)
-/*desktop*/
-{
-  .localisation{
+@media screen and (min-width: 1024px) and (max-width: 1300px) /*desktop*/ {
+  .localisation {
     height: 60px;
-    input{
+    input {
       width: 15%;
     }
-    .fa-map-marker-alt{
+    .fa-map-marker-alt {
       padding-top: 18px;
     }
   }
-  .reserver{
+  .reserver {
     height: 160px;
     padding-top: 0;
     padding-bottom: 10px;
-    .decouvrir{
+    .decouvrir {
       margin-top: 0;
-      }
-    h2{
-      margin-bottom: 10px;
-      }
     }
-  .fonctionnement{
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .fonctionnement {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
-    h2{
+    h2 {
       margin-bottom: 0;
       margin-top: 0;
       padding-left: 5vw;
     }
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
     }
-    li{
+    li {
       justify-content: center;
       width: 60%;
       margin-bottom: 2vw;
     }
-    span{
+    span {
       left: 26vw;
     }
-    div{
+    div {
       padding: 5px;
       width: 80%;
     }
-    p{
+    p {
       margin-left: 40px;
     }
   }
-  #restaurants{
+  #restaurants {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 0;
-    h2{
+    h2 {
       width: 100%;
       margin-bottom: 0;
       margin-top: 0;
     }
-    a{
+    a {
       width: 45%;
     }
-    .new{
-    left: 30vw;
-    top: 4.3vw;
-    width: 65px;
+    .new {
+      left: 30vw;
+      top: 4.3vw;
+      width: 65px;
+    }
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  .localisation {
+    height: 80px;
+    input {
+      width: 15%;
+    }
+    .fa-map-marker-alt {
+      padding-top: 25px;
+      padding-left: 2vw;
+    }
+  }
+  .reserver {
+    height: 170px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    .decouvrir {
+      margin-top: 5px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .fonctionnement {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2vw;
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 5vw;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    li {
+      justify-content: center;
+      width: 35%;
+      margin-bottom: 2vw;
+    }
+    span {
+      left: 36vw;
+    }
+    div {
+      padding: 5px;
+      width: 80%;
+    }
+    p {
+      margin-left: 40px;
+    }
+  }
+  #restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2vw;
+    h2 {
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 5vw;
+    }
+    a {
+      width: 35%;
+    }
+    .new {
+      left: 27vw;
+      top: 3vw;
+      width: 65px;
+    }
+    .resto_prev{
+      height: 260px;
+      .texte{
+        padding-left: 15px;
+      }
+      &__heading{
+        margin-top: 15px;
+      }
     }
   }
 }

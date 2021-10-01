@@ -116,13 +116,52 @@ button {
     font-size: 1.4em;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
   .new {
     font-size: 1em;
   }
 
   .fa-arrow-left {
     font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .new {
+    font-size: 1em;
+  }
+
+  .fa-arrow-left {
+    font-size: 1.8em;
+  }
+
+  input {
+    font-size: 1.5em;
+  }
+
+  .fa-map-marker-alt {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  .decouvrir {
+    font-size: 1.2em;
+  }
+
+  .resto-prev .fa-heart {
+    font-size: 1.5em;
+  }
+  .resto-prev__byline {
+    font-size: 1em;
+  }
+  .resto-prev__heading {
+    font-size: 1.2em;
+  }
+
+  li {
+    font-size: 1.1em;
   }
 }
 .button {
@@ -197,7 +236,7 @@ header {
     top: 5vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
   .header {
     width: 300px;
     margin-top: 2vw;
@@ -210,6 +249,21 @@ header {
 
   .fa-arrow-left {
     top: 3vw;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .header {
+    width: 300px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .fa-arrow-left {
+    top: 3.7vw;
   }
 }
 footer {
@@ -443,7 +497,7 @@ footer a {
     top: 4.3vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
   .localisation {
     height: 60px;
   }
@@ -516,6 +570,96 @@ footer a {
     left: 30vw;
     top: 4.3vw;
     width: 65px;
+  }
+}
+@media screen and (min-width: 1301px) {
+  .localisation {
+    height: 80px;
+  }
+  .localisation input {
+    width: 15%;
+  }
+  .localisation .fa-map-marker-alt {
+    padding-top: 25px;
+    padding-left: 2vw;
+  }
+
+  .reserver {
+    height: 170px;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .reserver .decouvrir {
+    margin-top: 5px;
+  }
+  .reserver h2 {
+    margin-bottom: 10px;
+  }
+
+  .fonctionnement {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2vw;
+  }
+  .fonctionnement h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 5vw;
+  }
+  .fonctionnement ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .fonctionnement li {
+    justify-content: center;
+    width: 35%;
+    margin-bottom: 2vw;
+  }
+  .fonctionnement span {
+    left: 36vw;
+  }
+  .fonctionnement div {
+    padding: 5px;
+    width: 80%;
+  }
+  .fonctionnement p {
+    margin-left: 40px;
+  }
+
+  #restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2vw;
+  }
+  #restaurants h2 {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 5vw;
+  }
+  #restaurants a {
+    width: 35%;
+  }
+  #restaurants .new {
+    left: 27vw;
+    top: 3vw;
+    width: 65px;
+  }
+  #restaurants .resto_prev {
+    height: 260px;
+  }
+  #restaurants .resto_prev .texte {
+    padding-left: 15px;
+  }
+  #restaurants .resto_prev__heading {
+    margin-top: 15px;
   }
 }
 .preview {
@@ -595,6 +739,13 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   button {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  button {
+    width: 20%;
+    margin-bottom: 6vw;
+    margin-top: 5vw;
   }
 }
 
