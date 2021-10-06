@@ -665,7 +665,6 @@ footer a {
   }
   .fonctionnement ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
   }
@@ -675,7 +674,8 @@ footer a {
     margin-bottom: 2vw;
   }
   .fonctionnement span {
-    left: 36vw;
+    position: relative;
+    left: 0.8vw;
   }
   .fonctionnement div {
     padding: 5px;
