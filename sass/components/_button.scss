@@ -18,7 +18,7 @@
         transition: opacity 250ms;
         border-radius: 30px;
         box-shadow: 3px 5px 8px darken($colour-grey, 30%);
-        background-color: linear-gradient(to top left, lighten($colour-primary, 50%), lighten($colour-secondary,50%));
+        background-color:  linear-gradient(to top left, $light-primary, $light-secondary);
     }
     &:hover{
         &::after{
