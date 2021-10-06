@@ -36,7 +36,11 @@ span {
 }
 
 .fa-heart {
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+
+.coeurs .fas {
+  background-color: linear-gradient(to top left, #9356dc, #ff79da);
 }
 
 .fa-hands-helping {
@@ -212,11 +216,11 @@ button {
   border-radius: 30px;
   box-shadow: 2px 3px 5px #c3c3c3;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .button::after {
   content: "";
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 0;
@@ -226,9 +230,30 @@ button {
   transition: opacity 250ms;
   border-radius: 30px;
   box-shadow: 3px 5px 8px #aaaaaa;
-  background-color: linear-gradient(to top left, white, white);
+  background: linear-gradient(to top left, #a16be0, #ff93e1);
 }
 .button:hover::after {
+  opacity: 1;
+}
+
+.coeurs {
+  position: relative;
+}
+.coeurs .fas {
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+.coeurs .far {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+.coeurs:hover .fas {
   opacity: 1;
 }
 
@@ -467,9 +492,9 @@ footer a {
 .resto_prev .texte {
   padding-left: 10px;
 }
-.resto_prev .far {
-  align-self: center;
-  padding-right: 20px;
+.resto_prev .coeurs {
+  top: 25px;
+  right: 30px;
 }
 .resto_prev__heading {
   margin-bottom: 5px;
@@ -744,9 +769,9 @@ footer a {
   display: flex;
   justify-content: space-between;
 }
-.entete .fa-heart {
-  padding-top: 28px;
-  padding-right: 20px;
+.entete .coeurs {
+  right: 2vw;
+  top: 30px;
 }
 
 .menu__titre {
@@ -829,9 +854,6 @@ button {
     margin-left: 2vw;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .entete .far {
-    padding-top: 10px;
   }
 
   .menu {

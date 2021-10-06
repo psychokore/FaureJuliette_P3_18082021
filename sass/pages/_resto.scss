@@ -23,9 +23,9 @@
 .entete{
     display: flex;
     justify-content: space-between;
-    .fa-heart{
-        padding-top: 28px;
-        padding-right: 20px;
+    .coeurs{
+        right: 2vw;
+        top: 30px;
     }
 }
 
@@ -116,9 +116,6 @@ button{
             margin-left: 2vw;
             margin-top: 0;
             margin-bottom: 0;
-        }
-        .far{
-            padding-top: 10px;
         }
     }
     .menu{

@@ -5,10 +5,10 @@
     border-radius: 30px;
     @include boxshadow;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     &::after{
         content: "";
-        z-index: -1;
+        z-index: 1;
         position: absolute;
         top: 0;
         right: 0;
@@ -18,11 +18,35 @@
         transition: opacity 250ms;
         border-radius: 30px;
         box-shadow: 3px 5px 8px darken($colour-grey, 30%);
-        background-color:  linear-gradient(to top left, $light-primary, $light-secondary);
+        background:  linear-gradient(to top left, $light-primary, $light-secondary);
+        
     }
     &:hover{
         &::after{
             opacity: 1;
+        }
+    }
+}
+
+.coeurs{
+    position: relative;
+    .fas{
+        opacity: 0;
+        transition: opacity 250ms ease-out;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
+    .far{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0; 
+    }
+    &:hover{
+        .fas{
+        opacity: 1;
         }
     }
 }
