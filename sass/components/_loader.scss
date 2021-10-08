@@ -1,49 +1,54 @@
-.loadingspinner{
-    width: 100%;
-    height: 1600px;
-    background-color: $colour-grey;
-    text-align: center;
-    z-index: 3;
-    position: absolute;
+.loading{
+    animation: fading 0.5s 1.9s backwards;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fading 0.5s 1.9s backwards;
+    background-color: $colour-grey;
+    width: 100%;
+    height: 1600px;
+    position: absolute;
+    z-index: 3;
     opacity: 0;
-  }
-  
-  .loader{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    vertical-align: middle;
+}
+.loader {
     position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
   }
   
-  .loader-quart{
-    border-radius: 50px;
-    border: 6px solid $colour-primary;
-    &::after{
-      content: "";
-      position: absolute;
-      top: -6px;
-      left: -6px;
-      bottom: -6px;
-      right: -6px;
-      border: 6px solid transparent;
-      border-radius: 50px;
-      border-top-color: $colour-secondary;
-      animation: spin 1.5s linear infinite;
-    }
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 10;
+    background: $colour-grey;
+    border-radius: 50%;
   }
-
+  
+  .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      -280deg,#9356dc 78%,#ff79da 15%); 
+    filter: blur(20px);
+    z-index: -1;
+    animation: spin 1.5s linear infinite;
+  }
+  
   @keyframes spin {
-      0%{
-          transform: rotate(0deg);
-      }
-      100%{
-          transform: rotate(360deg);
-      }
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   @keyframes fading {

@@ -321,42 +321,47 @@ button {
 }
 /*grid scaleX(0.75) et passer le deuxieme colonne en pixel (25px)*/
 /*pour le slide soit translate et opacity soit scale passer de 0 a 1 avec translate pour le placer sur la card*/
-.loadingspinner {
-  width: 100%;
-  height: 1600px;
-  background-color: #f6f6f6;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
+.loading {
+  animation: fading 0.5s 1.9s backwards;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fading 0.5s 1.9s backwards;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 1600px;
+  position: absolute;
+  z-index: 3;
   opacity: 0;
 }
 
 .loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  vertical-align: middle;
   position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.loader-quart {
-  border-radius: 50px;
-  border: 6px solid #9356dc;
-}
-.loader-quart::after {
+.loader:before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -6px;
-  bottom: -6px;
-  right: -6px;
-  border: 6px solid transparent;
-  border-radius: 50px;
-  border-top-color: #ff79da;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10;
+  background: #f6f6f6;
+  border-radius: 50%;
+}
+
+.loader span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(-280deg, #9356dc 78%, #ff79da 15%);
+  filter: blur(20px);
+  z-index: -1;
   animation: spin 1.5s linear infinite;
 }
 
