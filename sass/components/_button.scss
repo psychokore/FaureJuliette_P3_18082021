@@ -4,27 +4,9 @@
     padding: 15px;
     border-radius: 30px;
     @include boxshadow;
-    position: relative;
-    z-index: 2;
-    &::after{
-        content: "";
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        opacity: 0;
-        transition: opacity 250ms;
-        border-radius: 30px;
+    &:hover{
         box-shadow: 3px 5px 8px darken($colour-grey, 30%);
         background:  linear-gradient(to top left, $light-primary, $light-secondary);
-        
-    }
-    &:hover{
-        &::after{
-            opacity: 1;
-        }
     }
 }
 
@@ -37,6 +19,11 @@
         z-index: 1;
         top: 0;
         right: 0;
+        background: -webkit-linear-gradient($colour-primary,$colour-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
     }
     .far{
         position: absolute;
@@ -47,6 +34,9 @@
     &:hover{
         .fas{
         opacity: 1;
+        }
+        .far{
+            color: transparent;
         }
     }
 }
