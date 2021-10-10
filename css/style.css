@@ -322,16 +322,15 @@ button {
 /*grid scaleX(0.75) et passer le deuxieme colonne en pixel (25px)*/
 /*pour le slide soit translate et opacity soit scale passer de 0 a 1 avec translate pour le placer sur la card*/
 .loading {
-  animation: fading 0.5s 1.9s backwards;
+  animation: fading 0.5s 1.9s;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: black;
   width: 100%;
   height: 1600px;
   position: absolute;
   z-index: 3;
-  opacity: 0;
 }
 
 .loader {
