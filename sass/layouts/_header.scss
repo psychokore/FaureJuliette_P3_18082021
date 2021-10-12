@@ -1,11 +1,13 @@
 .header {
   width: 50%;
   display: block;
-  margin: 5vw auto 5vw auto;
+  margin: 0 auto 0 auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 
 header{
-    height: 11vw;
+    height: 18vw;
 }
 
 .fa-arrow-left{
@@ -20,11 +22,11 @@ header{
 {
   .header{
     width: 40%;
-    margin-top: 3vw;
+    padding-top: 3vw;
     margin-bottom: 3vw;
   }
   header{
-    height: 70px;
+    height: 90px;
   }
   .fa-arrow-left{
     top: 5vw;
@@ -36,11 +38,11 @@ header{
 {
   .header{
     width: 300px;
-    margin-top: 2vw;
+    padding-top: 2vw;
     margin-bottom: 2vw;
   }
   header{
-    height: 70px;
+    height: 80px;
   }
   .fa-arrow-left{
     top: 3vw;
@@ -51,11 +53,11 @@ header{
 {
   .header{
     width: 300px;
-    margin-top: 3vw;
+    padding-top: 2vw;
     margin-bottom: 3vw;
   }
   header{
-    height: 80px;
+    height: 100px;
   }
   .fa-arrow-left{
     top: 3.7vw;

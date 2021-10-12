@@ -20,10 +20,8 @@
         top: 0;
         right: 0;
         background: -webkit-linear-gradient($colour-primary,$colour-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .far{
         position: absolute;
