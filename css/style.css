@@ -285,6 +285,10 @@ button {
     transform: rotate(360deg);
   }
 }
+.fa-check-circle {
+  animation: checkmarkrotate 0.8s 1700ms;
+}
+
 .loading {
   animation: fading 0.5s 1.9s forwards;
   display: flex;
@@ -853,7 +857,7 @@ footer a {
   background-color: #fff;
   border-radius: 15px;
   display: flex;
-  background-color: white;
+  background-color: #fff;
   border-radius: 15px;
   justify-content: space-between;
   margin-bottom: 4vw;
@@ -895,11 +899,10 @@ footer a {
 }
 
 .fa-check-circle {
-  color: white;
+  color: #fff;
   margin-top: 23px;
   margin-left: 25px;
   font-size: 1.2em;
-  animation: checkmarkrotate 0.8s 1700ms;
 }
 
 button {

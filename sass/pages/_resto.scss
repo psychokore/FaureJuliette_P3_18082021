@@ -42,7 +42,7 @@
     background-color: $colour-white;
     border-radius: 15px;
     display: flex;
-    background-color: white;
+    background-color: $colour-white;
     border-radius: 15px;
     justify-content: space-between;
     margin-bottom: 4vw;
@@ -75,18 +75,17 @@
     }
 }
 .checkmark{
-    background-color: #99e2d0;
+    background-color: $colour-tertiary;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     transition: transform 330ms ease-in-out;
     width: 80px;
 }
 .fa-check-circle{
-    color: white;
+    color: $colour-white;
     margin-top: 23px;
     margin-left: 25px;
     font-size: 1.2em;
-    animation: checkmarkrotate 0.8s 1700ms;   
 }
 
 button{
@@ -96,6 +95,7 @@ button{
     margin-top: 8vw;
     margin-bottom: 10vw;
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
 /*tablettes*/
