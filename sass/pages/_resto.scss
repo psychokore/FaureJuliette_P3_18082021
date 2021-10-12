@@ -47,6 +47,9 @@
     justify-content: space-between;
     margin-bottom: 4vw;
     @include boxshadow;
+    &:hover .checkmark{
+        width: 80px;
+    }
     .textplats{
         display: flex;
         flex-direction: column;
@@ -80,8 +83,8 @@
     background-color: $colour-tertiary;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 80px;
-    
+    width: 0px;
+    transition: width 1s;
 }
 .fa-check-circle{
     color: $colour-white;

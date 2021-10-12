@@ -863,6 +863,9 @@ footer a {
   margin-bottom: 4vw;
   box-shadow: 2px 3px 5px #c3c3c3;
 }
+.plats:hover .checkmark {
+  width: 80px;
+}
 .plats .textplats {
   display: flex;
   flex-direction: column;
@@ -896,7 +899,8 @@ footer a {
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 80px;
+  width: 0px;
+  transition: width 1s;
 }
 
 .fa-check-circle {
