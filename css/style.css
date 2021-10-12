@@ -869,16 +869,18 @@ footer a {
   padding-left: 10px;
   width: 200px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .plats h4 {
   margin-bottom: 3px;
   margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plats .complement {
   margin-top: 5px;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plats .prix {
   text-align: end;
@@ -894,7 +896,6 @@ footer a {
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: transform 330ms ease-in-out;
   width: 80px;
 }
 
@@ -962,13 +963,6 @@ button {
   .plats {
     margin-bottom: 3vw;
     height: 70px;
-  }
-  .plats h4 {
-    padding-left: 10px;
-  }
-  .plats .complement {
-    margin-top: 20px;
-    padding-left: 10px;
   }
 
   button {
