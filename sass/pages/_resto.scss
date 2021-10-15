@@ -51,6 +51,9 @@
     &:hover .checkmark{
         width: 70px;
     }
+    &:hover .fa-check-circle{
+        transform: rotate(360deg);
+    }
     .textplats{
         display: flex;
         flex-direction: column;
@@ -92,9 +95,10 @@
 }
 .fa-check-circle{
     color: $colour-white;
-    margin-top: 23px;
+    margin-top: 25px;
     margin-left: 25px;
     font-size: 1.2em;
+    transition: transform 10s ease-in-out;
 }
 
 button{

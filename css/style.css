@@ -307,6 +307,7 @@ button {
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
+  bottom: 35vh;
 }
 
 .loader:before {
@@ -373,7 +374,7 @@ header {
 .fa-arrow-left {
   position: absolute;
   left: 3vw;
-  top: 6vw;
+  top: 6.5vw;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -418,7 +419,7 @@ header {
   }
 
   .fa-arrow-left {
-    top: 3.7vw;
+    top: 2.3vw;
   }
 }
 footer {
@@ -464,7 +465,7 @@ footer a {
 .localisation input {
   background-color: #dddddd;
   border: none;
-  width: 30%;
+  width: 35%;
   margin-left: 15px;
   background: none;
 }
@@ -867,6 +868,9 @@ footer a {
 .plats:hover .checkmark {
   width: 70px;
 }
+.plats:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
 .plats .textplats {
   display: flex;
   flex-direction: column;
@@ -909,9 +913,10 @@ footer a {
 
 .fa-check-circle {
   color: #fff;
-  margin-top: 23px;
+  margin-top: 25px;
   margin-left: 25px;
   font-size: 1.2em;
+  transition: transform 10s ease-in-out;
 }
 
 button {
