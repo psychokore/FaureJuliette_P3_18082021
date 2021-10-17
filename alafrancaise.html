@@ -4,20 +4,141 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-        <link rel="stylesheet" href="styleohmyfood.scss" />
+        <link rel="stylesheet" href="css/style.css" />
         <title>OhMyFood - À la française</title>
     </head>
 
     <body>
         <header>
-            <img class="header" src="Maquettes-Ohmyfood/images/logo/ohmyfood.png" alt="ohmyfood">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <img class="header" src="images\logo\ohmyfood.png" alt="ohmyfood">
         </header>
+        
+        <div class="preview">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="ALaFrancaise" class="preview__image">
+        </div>
+            
+        <div class="carte">
+            <div class="entete">
+                <h1 class="entete__heading">À la française</h1>
+                <div class="coeurs">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu__titre">ENTRÉES</h3>
+                <div class="blocplats">
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <p class="complement">Aux zests d'orange</p>
+                </div>
+                    <p class="prix">25€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <p class="complement">Carotte, panais, topinambour</p>
+                </div>
+                    <p class="prix">35€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Soupe à l'oignon</h4>
+                    <p class="complement">Revisitée</p>
+                </div>
+                    <p class="prix">20€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu__titre">PLATS</h3>
+                <div class="blocplats">
+                <div class="plats">
+                    <div class="texplats">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <p class="complement">Accompagnées d'une purée de panais</p>
+                </div>
+                    <p class="prix">40€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Magret de canard</h4>
+                    <p class="complement">Et parmentier de pommes de terres</p>
+                </div>
+                    <p class="prix">35€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                    <p class="complement">Sur son lit de gnocchis aux légumes</p>
+                </div>
+                    <p class="prix">44€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="menu__titre">DESSERTS</h3>
+                <div class="blocplats">
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Pétales de violettes glacés</h4>
+                    <p class="complement">Et purée de noisettes</p>
+                </div>
+                    <p class="prix">18€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Fondant au chocolat</h4>
+                    <p class="complement">Revisité</p>
+                </div>
+                    <p class="prix">22€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                <div class="plats">
+                    <div class="textplats">
+                    <h4>Millefeuille croustillant</h4>
+                    <p class="complement">Myrtilles et pâte d'amande</p>
+                </div>
+                    <p class="prix">23€</p>
+                    <div class="checkmark">
+                        <i class="fas fa-check-circle"></i>
+                   </div>
+                </div>
+                </div>
+            </div>
 
+            <button class="button">Commander</button>
+        </div>
 
 
         <footer>
             <h4 class="footer__heading">ohmyfood</h4>
-            <ul>
+            <ul class="footer__list">
                 <li>
                     <i class="fas fa-utensils"></i>
                     <p>Proposer un restaurant</p>  
@@ -26,10 +147,10 @@
                     <i class="fas fa-hands-helping"></i> 
                     <p>Devenir partenaire</p>
                 </li>
-                <li>Mentions légales</li>
-                <li><a href="mailto:ohmyfood@email.com">Contact</a></li>
+                <li><p>Mentions légales</p></li>
+                <li><a href="mailto:ohmyfood@email.com"><p>Contact</a></p></li>
             </ul>
-        </footer>            
+        </footer>  
      
 
     </body>

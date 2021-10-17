@@ -1,0 +1,74 @@
+.loading{
+    animation: fading 0.5s 1.9s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colour-grey;
+    width: 100%;
+    height: 1600px;
+    position: absolute;
+    z-index: 3;
+}
+.loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
+    bottom: 35vh;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 10;
+    background: $colour-grey;
+    border-radius: 50%;
+  }
+  
+  .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      -280deg,#9356dc 78%,#ff79da 15%); 
+    filter: blur(20px);
+    z-index: -1;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fading {
+      0%{
+          opacity: 1;
+      }
+
+      15%{
+          opacity: 0.90;
+      }
+
+      33%{
+          opacity: 0.50;
+      }
+
+      66%{
+          opacity: 0.25;
+      }
+      100%{
+          opacity: 0;
+          transform: scale(0);
+      }
+  }

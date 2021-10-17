@@ -1,0 +1,65 @@
+.header {
+  width: 50%;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+header{
+    height: 18vw;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    left: 3vw;
+    top: 6.5vw;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+  .header{
+    width: 40%;
+    padding-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  header{
+    height: 90px;
+  }
+  .fa-arrow-left{
+    top: 5vw;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) and (max-width:1300px)
+{
+  .header{
+    width: 300px;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  header{
+    height: 80px;
+  }
+  .fa-arrow-left{
+    top: 3vw;
+  }
+}
+
+@media screen and (min-width: 1301px)
+{
+  .header{
+    width: 300px;
+    padding-top: 2vw;
+    margin-bottom: 3vw;
+  }
+  header{
+    height: 100px;
+  }
+  .fa-arrow-left{
+    top: 2.3vw;
+  }
+}

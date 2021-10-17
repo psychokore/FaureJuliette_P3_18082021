@@ -1,0 +1,7 @@
+@mixin background {
+    background-color: $colour-grey;
+}
+
+@mixin boxshadow {
+    box-shadow: 2px 3px 5px darken($colour-grey, 20%);
+}

@@ -1,0 +1,170 @@
+.preview{
+    height: 200px;
+    &__image{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: 60% 60%;
+    }
+}
+
+.carte{
+    @include background;
+    position: relative;
+    padding-top: 3vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3vw;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+}    
+
+.entete{
+    display: flex;
+    justify-content: space-between;
+    .coeurs{
+        right: 2vw;
+        top: 30px;
+    }
+}
+
+.menu{
+    &__titre{
+        border-bottom: 3px solid $colour-tertiary;
+        width: 40px;
+    }
+}
+
+
+
+.plats{
+    background-color: $colour-white;
+    border-radius: 15px;
+    display: flex;
+    background-color: $colour-white;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin-bottom: 4vw;
+    overflow: hidden;
+    @include boxshadow;
+    &:hover .checkmark{
+        width: 70px;
+        .fa-check-circle{
+            animation: checkmarkrotate 0.8s;
+        }
+    }
+    .textplats{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        width: 250px;
+        white-space: nowrap;
+        flex: 1;
+        overflow: hidden;
+    }
+    h4{
+        margin-bottom: 3px;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .complement{
+        margin-top: 5px;
+        margin-bottom: 10px;  
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    .prix{
+        text-align: end;
+        align-self: flex-end;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        font-weight: 600;
+        width: 20px;
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+}
+.checkmark{
+    background-color: $colour-tertiary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 0px;
+    transition: width 1s;
+}
+.fa-check-circle{
+    color: $colour-white;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 1.2em;
+}
+
+
+
+button{
+    border-style: none;
+    align-self: center;
+    width: 55%;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+    button{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1300px)
+{
+    button{
+        width: 20%;
+        margin-bottom: 6vw;
+        margin-top: 5vw;
+    }
+    .plats{
+        width: 80%;
+        margin-left: 8vw;
+    }
+    .carte{
+        padding-left: 3vw;
+    }
+}
+
+@media screen and (min-width: 1301px)
+{
+    .carte{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 3vw;
+    }
+    .entete{
+        width: 100%;
+        height: 50px;
+        h1{
+            margin-left: 2vw;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    .menu{
+        width: 30%;
+        h3{
+            margin-bottom: 2vw;
+        }
+    }
+    .plats{
+        margin-bottom: 3vw;
+        height: 70px;
+    }
+    button{
+        width: 20%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+}

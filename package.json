@@ -1,0 +1,19 @@
+{
+  "name": "p3_faure_juliette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychokore/P3_faure_juliette.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psychokore/P3_faure_juliette/issues"
+  },
+  "homepage": "https://github.com/psychokore/P3_faure_juliette#readme"
+}

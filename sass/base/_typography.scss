@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../Polices/roboto/Roboto-Regular.ttf);
+    font-family: "Shrikhand";
+    src: url(../Polices/shrikhand/Shrikhand-Regular.ttf);
+}
+
+body
+{
+    font-family: "Roboto";
+}
+
+footer{
+    h4{
+    font-family: "Shrikhand";
+    font-size: 1.2em;
+    font-weight: 200;
+    }
+    
+}
+
+a{
+    text-decoration: none;
+    color: $colour-black;
+}
+
+span{
+    color: $colour-white;
+}
+
+.resto_prev__heading{
+    font-size: 1em;
+}
+
+.resto_prev__byline{
+    font-size: 0.9em;
+}
+
+.fa-heart{
+    font-size: 1.3em;
+}
+
+.coeurs{
+    .fas{
+    background-color: $gradient;
+    }
+}
+
+.fa-hands-helping{
+    font-size: 0.7em;
+}
+
+.fa-utensils{
+    font-size: 0.8em;
+}
+
+input{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.fonctionnement{
+    p{
+        font-weight: bold;
+    }
+    
+}
+
+h2{
+    font-weight: bold;
+}
+
+.fa-arrow-left{
+    font-size: 1.2em;
+}
+
+.entete{
+    &__heading{
+        font-family: "Shrikhand";
+        font-weight: 200;
+        font-size: 1.8em;
+    }
+    .fa-heart{
+        font-size: 1.5em;
+    }
+}
+
+.menu{
+    &__titre{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+
+.plats{
+    h4{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .complement{
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+    .prix{
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+button{
+    font-size: 1em;
+}
+
+.new{
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+/*tablettes*/
+{
+    .fa-arrow-left{
+        font-size: 1.5em;
+    }
+    .fa-map-marker-alt{
+        font-size: 1.3em;
+    }
+    input{
+        font-size: 1.25em;
+    }
+
+    h2{
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1300px)
+{
+    .new{
+        font-size: 1em;
+    }
+    .fa-arrow-left{
+        font-size: 1.8em;
+    }
+    .carte{
+        h1{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1.2em;
+        }
+        h4{
+            font-size: 1.1em;
+        }
+        .complement{
+            font-size: 1em;
+        }
+        .fa-heart{
+            font-size: 1.8em;
+        }
+    }
+}
+
+@media screen and (min-width: 1301px)
+{
+    .new{
+        font-size: 1em;
+    }
+    .fa-arrow-left{
+        font-size: 1.8em;
+    }
+    input{
+        font-size: 1.5em;
+    }
+    .fa-map-marker-alt{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    .decouvrir{
+        font-size: 1.2em;
+    }
+    
+    li{
+        font-size: 1.1em;
+    }
+    .entete{
+        .fa-heart{
+            font-size: 1.8em;
+        }
+        h1{
+            font-size: 2em;
+        }
+    }
+    .menu{
+        &__titre{
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    }
+    
+    .plats{
+        h4{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .complement{
+            font-size: 1em;
+            font-weight: 300;
+        }
+        .prix{
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    }
+    .resto_prev{
+        .fa-heart{
+            font-size: 1.5em;
+        }
+        &__heading{
+            font-size: 1.2em;
+        }
+        &__byline{
+            font-size: 1em;
+        }
+    }
+}

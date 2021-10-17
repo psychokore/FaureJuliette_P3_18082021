@@ -1,0 +1,45 @@
+@keyframes checkmarkrotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.blocplats :nth-of-type(1) {
+    animation: apparitionplats 1000ms 200ms both;
+}
+
+.blocplats :nth-of-type(2){
+    animation: apparitionplats 1000ms 700ms both;
+}
+
+.blocplats :nth-of-type(3){
+    animation: apparitionplats 1000ms 900ms both;
+}
+
+.blocplats :nth-of-type(4){
+    animation: apparitionplats 1000ms 1100ms both;
+}
+
+@keyframes apparitionplats {
+    0%{
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
