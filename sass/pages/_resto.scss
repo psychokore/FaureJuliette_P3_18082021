@@ -50,9 +50,9 @@
     @include boxshadow;
     &:hover .checkmark{
         width: 70px;
-    }
-    &:hover .fa-check-circle{
-        transform: rotate(360deg);
+        .fa-check-circle{
+            animation: checkmarkrotate 0.8s;
+        }
     }
     .textplats{
         display: flex;
@@ -98,8 +98,9 @@
     margin-top: 25px;
     margin-left: 25px;
     font-size: 1.2em;
-    transition: transform 10s ease-in-out;
 }
+
+
 
 button{
     border-style: none;

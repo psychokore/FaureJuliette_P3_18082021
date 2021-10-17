@@ -248,6 +248,14 @@ button {
   color: transparent;
 }
 
+@keyframes checkmarkrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .blocplats :nth-of-type(1) {
   animation: apparitionplats 1000ms 200ms both;
 }
@@ -277,18 +285,6 @@ button {
     opacity: 1;
   }
 }
-@keyframes checkmarkrotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.fa-check-circle {
-  animation: checkmarkrotate 0.8s 1700ms;
-}
-
 .loading {
   animation: fading 0.5s 1.9s forwards;
   display: flex;
@@ -868,8 +864,8 @@ footer a {
 .plats:hover .checkmark {
   width: 70px;
 }
-.plats:hover .fa-check-circle {
-  transform: rotate(360deg);
+.plats:hover .checkmark .fa-check-circle {
+  animation: checkmarkrotate 0.8s;
 }
 .plats .textplats {
   display: flex;
@@ -916,7 +912,6 @@ footer a {
   margin-top: 25px;
   margin-left: 25px;
   font-size: 1.2em;
-  transition: transform 10s ease-in-out;
 }
 
 button {
