@@ -219,6 +219,7 @@ button {
   background: linear-gradient(to top left, #9356dc, #ff79da);
   padding: 15px;
   border-radius: 30px;
+  cursor: pointer;
   box-shadow: 2px 3px 5px #c3c3c3;
 }
 .button:hover {

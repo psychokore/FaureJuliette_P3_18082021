@@ -3,6 +3,7 @@
     background: $gradient;
     padding: 15px;
     border-radius: 30px;
+    cursor: pointer;
     @include boxshadow;
     &:hover{
         box-shadow: 3px 5px 8px darken($colour-grey, 30%);
