@@ -225,3 +225,10 @@ button{
         }
     }
 }
+
+@media screen and (max-width: 330px)
+{
+    .entete{
+        font-size: 0.9em;
+    }
+}

@@ -209,6 +209,11 @@ button {
     font-size: 1em;
   }
 }
+@media screen and (max-width: 330px) {
+  .entete {
+    font-size: 0.9em;
+  }
+}
 .button {
   color: #fff;
   background: linear-gradient(to top left, #9356dc, #ff79da);
